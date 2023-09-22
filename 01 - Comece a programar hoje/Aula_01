@@ -1,0 +1,164 @@
+Aula 01-02-03 Introdução ao navegador utilizado (chrome) e também editor de texto (Sublime)
+
+Aula 04 - Iniciação e diferenciação das tag's para indicar que é uma página HTML, pois é a linguagem que o navegador entende.
+	- Comandos vistos - 
+		<br> - Quebra de linha
+		<h1> </h1> - Titulo
+
+Aula 5 - Aprender logica de programação com javascript
+	- Comandos vistos
+		<script>alert("Isso sim é um programa");</script>
+	- Depurador para entender erros, sinalizando a linha do erro F12
+
+Aula 6 e 7- Revisão:
+	- 	Aprendemos que desenvolver não exige um ambiente complexo;
+	- É possível utilizar o próprio navegador, e todo sistema operacional possui um. Ao longo do curso utilizaremos o Google Chrome;
+	- Podemos utilizar um editor de texto padrão. Nós usaremos o Sublime Text, disponível para todas as plataformas;
+	- Compreendemos que o HTML é uma linguagem de marcação, pois ela possibilita marcar conteúdos por meio de tags;
+	- Algumas tags não possuem marcação, como o <br>, que serve para pular uma linha;
+	- A tag <a> nos permite sair de uma página e mudar para outra;
+	- O HTML é estático, isto é, não muda. Não podemos fazer nada muito sofisticado com ele. Por esse motivo o navegador entende também a linguagem JavaScript, que é uma linguagem de programação dinâmica, com a qual podemos desenvolver de maneira mais avançada;
+	- Para o navegador interpretar uma instrução JavaScript, não basta colocarmos a instrução JavaScript direto no HTML. Temos que utilizar a tag <script>. Dessa forma o navegador saberá que deve processar essa parte do código como linguagem JavaScript e não como HTML;
+	- A primeira instrução que vimos do JavaScript foi o alert, que recebe como parâmetro um texto;
+	- Por último, aprendemos que todo texto em JavaScript vem entre aspas.
+
+Aula 8 Pergunta:
+	- No passado, era preciso instalar os mais diversos programas, muitos deles pagos, para que fosse possível dar os primeiros passos no mundo da programação. Isso acabava espantando os candidatos à programação. A boa notícia é que as coisas mudaram!
+
+	Temos as seguintes afirmações sobre o parágrafo anterior:
+	
+	A) Os sistemas operacionais mais populares do mercado (Windows, Linux, Mac) já vêm com um navegador web padrão e todo navegador é capaz de interpretar um código escrito por nós. - Correta
+
+	B) Uma das linguagens que o navegador compreende é a HTML.
+
+	C) Um navegador é um poliglota.
+
+Aula 9 - Organização
+	- Quando começamos a programa, ocorre explosão de arquivos. O instrutor solicitou criar uma pasta para centralizar os mesmos e manter o ambiente organizado. 
+
+Aula 10 - Explicado que uma boa pratica é a nomenclatura com padrão de arquivos separado por _ (exemplo: meu_primeiro_programa.html).
+	- Pergunta: Com base na revisão que fizemos de extensão de arquivo e convenção, temos os seguintes nomes de arquivo:
+
+	A) meu_primeiro_programa
+
+	B) segundoprograma.html
+
+	C) MEU_PROGRAMA.HTML
+
+	D) programa_minha.HTML
+
+	E) lógica_de_programação.html
+
+	- Qual das opções acima NÃO segue a convenção que utilizaremos até o final do curso?
+	- B Todas as alternaticas não seguem um padrão. 
+
+Aula 11 - Pergunta
+	- Todo navegador (ou Browser, em inglês) consegue ler e entender HTML que é a linguagem utilizada para a apresentação de dados e informações.
+
+	- Sobre o HTML podemos dizer:
+
+	- A) Sua sigla significa Hyper Text Markup Language, ou seja, é uma linguagem de marcação de texto caracterizada pelo uso de TAGS.
+
+	- B) TAG indicam instruções especiais a serem interpretadas pelo navegador.
+
+	- C) A TAG <h1> é usada para criar links para que o usuário seja levado de uma página para outra. 
+
+	- D) <meta> é o exemplo de uma TAG HTML.
+	- Apenas a C é Falsa
+
+Aula 12 - Pergunta
+	- A linguagem HTML é uma linguagem baseada em tags. Sobre tags podemos dizer:
+
+	- A) Toda tag começa com < e termina com >. Por exemplo, existem as tags <h1> e <a>.
+
+	- B) Dependendo da tag, ela pode ou não ter fechamento. Por exemplo, a tag <h1> precisa de fechamento para delimitar seu conteúdo. Já a tag <meta> não. Ela define o valor de diferentes atributos, como o que vimos mais cedo, o chamado charset.
+
+	- C) O seguinte exemplo é de uma tag válida: <h1>Olá<h1>.
+
+	- Sobre as afirmações acima podermos dizer que: A e B são corretas. 
+
+Aula 13 - Importancia do charset para construção e visualização dos programas.
+
+Aula 14 - Aplicando conheciment 
+	- Criamos o arquivo texto_puro.html com as regras de que teria que ter o meta charset utf-8 e uma quebra de linha entre dois paragrafos.
+Aula 15 - Pergunta
+	- <meta charset="UTF-8">
+	- Barney, aluno da Alura, iniciante no mundo da programação, partiu para a prática e escreveu seu primeiro código usando a linguagem HTML. Ele criou o arquivo teste.html cujo conteúdo apresenta erros. Analise:
+
+	- <h1>Um pequeno passo para quem já programa, um gigantesco salto para quem esta começando<h1>
+	- Este é meu primeiro programa!
+	- Marque a opção abaixo que indica quais são os erros existentes no código de Barney: "Ele terá problema na acentuação (exceto no Chrome) e todo o conteúdo exibido no browser estará em destaque, inclusive o segundo parágrafo."
+
+Aula 16 - Pergunta sobre erro de código
+	Visão além do alcance II: ajude um amigo
+
+	Barney resolveu ajudar um amigo que está com problemas de acentuação em seu código. Ele pediu que um colega adicionasse a famosa tag <meta>. Contudo, mesmo depois de ter adicionado a “tag”, a exibição da página no navegador continua com problema.
+
+	Veja o código escrito por Euzébio, amigo de Barney:
+
+	<meta charset="UTT-8">
+	Haja coração para dar os primeiros passos na lógica de programação. Precisamos primeiro nos ambientar com o mínimo necessário para que tudo dê certo.COPIAR CÓDIGO
+	Após analisar o trecho acima, você consegue identificar o problema com a implementação de Euzébio? = "O amigo de Barney se equivocou quando declarou a tag <meta>. Ele declarou como <meta charset="UTT-8"> e o correto é<meta charset="UTF-8">"
+
+Aula 17 - HTML vs Java Script
+	- HTML não é uma linguagem de programação (Hyper Text Markup Language). 
+	- HTMl por exeplo não antenderia um calculo e sim o mostraria. 
+	- JavaScript entra para trazer este conceito lógico para dentro da linguagem de marcação de texto.
+	- Não deixaremos de usar o HTML. Usarmos ambos paraa criação de programas. 
+
+Aula 18 - Mundo HTML e Mundo Java Script
+	- Quando escrevemos um código JavaScript, o primeiro passo é dar uma pista ao navegador para que ele entenda que o trecho de código a ser lido é JavaScript. Fazemos isso através: <script>
+
+Aula 19 - A instrução alert
+	- A primeira instrução que aprendemos em JavaScript foi a alert. A funcionalidade desta instrução é exibir um popup com o texto que definirmos. Vejamos um exemplo:
+
+		<meta charset="UTF-8">
+		<script>
+    		alert("Primeira instrução JavaScript que aprendi");
+		</script>COPIAR CÓDIGO
+
+	- Sobre alert, temos as seguintes afirmações: 
+	A) A instrução alert recebe um texto e todo texto em JavaScript é definido entre aspas. Exemplos de texto:
+
+	"Olá" "Isso aqui é um texto"COPIAR CÓDIGO
+	B) Podemos usar tanto a instrução alert quantoALERT pois o JavaScript reconhece as duas formas.
+
+	C) O uso dos parênteses é opcional, podemos ou não usá-lo.
+
+	- Resposta correta Somente a A
+
+Aula 20 - O que acontece (Alert)
+	- Aprendemos que a instrução alert tem como funcionalidade a exibição de um alerta pop up. Sendo assim, temos o seguinte código:
+
+		<meta charset="UTF-8">
+		<script>
+		    alert();
+		</script>COPIAR CÓDIGO
+		Sobre a maneira pela qual a instrução alert foi escrita podemos dizer que:
+
+	A) Nenhum popup será exibido
+
+	B) O popup será exibido, mas nenhuma mensagem será exibida.
+
+	C) Haverá um erro que pode ser averiguado pelo debugger, o console do navegador.
+
+	Resposta correta, B - 
+
+Aula 21 - Debugger é seu amigo
+	 - Toda a ferramenta de desenvolvimento possui um debugger.
+	 Vejamos o seguinte código escrito por Tio Ben:
+
+		<meta charset="UTF-8">
+		<script>
+		    alert("Isso");
+		    alert("é");
+		    alert("um");
+		    alert("programa);
+		    alert("sim");
+		</script>COPIAR CÓDIGO
+	- Apesar de Tio Ben jurar que verificou o código mil vezes, nada de errado é encontrado.No entanto, ao rodar o programa, Tio Ben identifica o seguinte erro:
+
+
+	- tio_ben.html:6 Uncaught SyntaxError: Invalid or unexpected token 
+
+	- Ao analisar o trecho acima, você consegue identificar o que aconteceu no código do Tio Ben? Tio Ben esqueceu de fechar o comando 	dentro do alert na linha 6 do prgrama.

@@ -1,0 +1,186 @@
+Aula 1 - Recapitulando
+	- Diferenças, no HTML as tags podem ser maiusculas.
+	- Java script, tem que ser minusculo, para não gerar erro de syntaxe.
+	- Tudo isto se trata de convenção de código
+	- ; nao faz diferenca para codigos simples. mas vamos usar para ja nos acostumarmos. 
+
+Aula 2 - Convenção no uso de tags
+	- Sobre o uso de tags, em HTML, podemos afirmar:
+
+	- A) Uma convenção muito usada é usar tags em letra maiúscula.
+	- B) Uma convenção muito usada é usar tags em letra minúscula.
+	- C) Podemos usar tanto tags em maiúscula ou em minúscula que não faz diferença para o navegador.
+
+	Sobre as afirmativas acima podemos dizer que: Letra B e C verdadeiras - A convenção é usarmos letras minúsculas para representar tags HTML. Contudo, não faz nenhuma diferença para o navegador se usarmos maiúsculo ou minúsculo.
+
+Aula 3 - Estrutura básica de todos os nossos programas
+	- Para os programas deste curso vamos usar a seguinte estrutura:
+		<meta charset="UTF-8">
+			<script>
+
+			</script>
+
+Aula 4 - Concatenação
+	- HTML tudo fora do <script>
+	- Java script tudo dentr do <script>
+	- Document.write(); Escreve em tag html por dentro do script. Função padrão de programação.
+	- esta instrução vai entender tag's  document.write("A idade do Willian é <br> 18");
+	- document.write(18/2); = calcula
+    - document.write("18" + "20"); Concatenação
+    - document.write("18" + 20); Concatenação
+    - javascript é camarada e auxilia em algumas conversões. 
+
+Aula 5 - Usar Alert demais, pode ser tedioso para o usuário.
+	- Uma boa prática é terminar uma instrução com ponto e vírgula. Contudo, vimos que se comunicar com o usuário através de alertas pode ser algo tedioso e por isso aprendemos uma nova instrução capaz de escrever a partir do mundo JavaScript no mundo HTML.
+
+	- Qual das opções abaixo exibe o texto "Isso será exibido para o usuário" usando essa nova forma de nos comunicarmos com o usuário?
+	Resposta document.write("Isso será exibido para o usuário");
+
+Aula 6 - Operações com texto e numéros.
+	- Concatenação de texto, padrão sempre soma o texto     document.write("Nasceu em ");
+    - document.write(20 + 20 + 30/3); - Programação segue avaliação padrão de matematica, para média, seria o correto document.write((20 + 20 + 30)/3);
+    - document.write("A soma das idades é" + 20 + 10 + 30); vai concatenando texto com numero onde o resultado ai ser "A soma das idades é 201030");
+    - document.write("A soma das idades é" + (20 + 10 + 30)/3); parenteses iguais, neste formato ele vai calcular primeiro e depois concatenar. 
+    - document.write("A soma das idades é " + (20 + 10 + 30) + "<br>"); concanetação com quebra de linha concatenando e gerando a querba de linha. 
+
+Aula 7 - (Revisão) Entendendo ainda mais o que acontece
+	- document.write que recebe entre () o texto: "Estou escrevendo do mundo JavaScript no mundo HTML".
+	- tudo que estiver entre as TAG's <script> e </script> é considerado pelo navegador como código JavaScript e tudo que estiver fora das - TAG's, não importa em que lugar, é código HTML. Mais um
+	- com document.write podemos passar o resultado de um cálculo entre outras coisas de maneira dinâmica já que o mundo HTML não é capaz de realizar operações matemáticas.
+	- document.write faz é alterar a página de maneira a escrever o que quiser no mundo HTML. Até logicas mais complexas.
+	- document.write("<h1>Seja bem-vindo</h1>"); Novamente java script no mundo html
+	- não podemos escrever no mundo HTML instruções JavaScript:
+
+Aula 8 - Que valor abusrdo é esse? Questão
+	- Robson criou o seguinte programa:
+		- <meta charset="UTF-8">
+			<script>
+			    document.write(200 + 100 + 300 + 400/4);
+			</script>
+	- O resultado estava dando 700, mas ele queria a media de 4 viagens feitas por ele.
+	- Qual o código correto a se descrever
+	- <meta charset="UTF-8">
+			<script>
+    			document.write( (200 + 100 + 300 + 400) / 4);
+			</script>
+
+Aula 9 - Robson Escreveu o seguinte códiog:
+	- <meta charset="UTF-8">
+		<script>
+		    document.write("A média do valor gasto com as viagens é") ;
+		    document.write( (200 + 100 + 300 + 400) / 4);
+		</script>
+	- QUal resultado esperado:
+
+	A: A média do valor gasto com as viagens é250
+	B: A média do valor gasto com as viagens é 250
+	C: A média do valor gasto com as viagens é
+	250
+
+	Resposta A, conforme código descrito.
+
+Aula 10 - Pergunta:
+	- Qual das opções abaixo exibe na tela o número 182?
+		Resposta correta
+		<meta charset="UTF-8">
+		<script>
+    		document.write("18" + "2");
+		</script>
+
+Aula 11 - Concatenação
+	- Diversos exemplos de concatenação,
+		<meta charset="UTF-8">
+			<script>
+			    document.write(12 + " anos");
+			</script>
+
+		<meta charset="UTF-8">
+			<script>
+
+			    document.write("Média calculada " + 20);
+			</script>
+	A resposta acabou sendo a letra D (A e C sao exemplos de concatenação)
+
+Aula 12 - Pergunta porcentagem.
+	Rafaela, aspirante à carreira de programadora, criou um pequeno programa para saber qual é sua porcentagem de acertos em uma 	prova de 50 questões de múltipla escolha. O cálculo matemático comporta dividir a quantidade de acertos pelo total de questões e multiplicar o resultado final por 100.
+
+	Rafaela acertou 15 questões e quer saber o percentual de acertos.
+
+	<meta charset="UTF-8">
+		<script>
+		    document.write("Eu acertei: " + 15/50*100 );
+		</script>
+
+Aula 13 - Questão:
+	Temos o seguinte código:
+
+		<meta charset="UTF-8">
+		<script>
+		    document.write("A" + "B" + 20 + 10 + "C" + (5 + 10) + "D");
+		</script>
+	
+	Qual das opções abaixo está correta
+
+	A: AB30C15D
+	B: AB2010C15D
+	C: AB2010C510D
+
+	Resposta Correta: B - Explicação
+	Primeiro, vamos analisar a string, fora da instrução document.write:
+
+	"A" + "B" + 20 + 10 + "C" + (5 + 10) + "D"COPIAR CÓDIGO
+	Lembre-se que o que estiver entre parênteses será processado primeiro, sendo assim temos:
+
+	"A" + "B" + 20 + 10 + "C" + 15 + "D"COPIAR CÓDIGO
+	Agora ocorre o processo de concatenação que vai da esquerda para a direita resultando em AB2010C15D.
+
+	Vejamos passo a passo o que acontece com as concatenações de "A" + "B" + 20 + 10 + "C" + (5 + 10) + "D":
+
+	"AB" + 20 + 10 + "C" + 15 + "D"
+	"AB20" + 10 + "C" + 15 + "D"
+	"AB2010" + "C" + 15 + "D"
+	"AB2010C" + 15 + "D"
+	"AB2010C15" + "D"
+	"AB2010C15D"COPIAR CÓDIGO
+
+Aula 14 - O que não fazemos por amor.
+	- Fugêncio escreve o seguinte código:
+
+		<meta charset="UTF-8">
+
+		<script>
+		    document.write("Flávio nasceu em " + (2016 - 39));
+		    document.write("<br>");
+		    document.write("Joaquim nasceu em " + (2016 - 20));
+		    document.write("<br>");
+		    document.write("Barney nasceu em " + (2016 - 40));
+		</script>
+	- QUal melhor maneira de concatenar o código
+
+	Opção A 
+			<meta charset="UTF-8">
+			<script>
+			    document.write("Flávio nasceu em " + 2016 - 39 + "<br>");
+			    document.write("Joaquim nasceu em " + 2016 - 20 + "<br>");
+			    document.write("Barney nasceu em " + 2016 - 40);
+			</script>
+	Opção B
+			<meta charset="UTF-8">
+
+				document.write("<br>");
+			<script>
+			    document.write("Flávio nasceu em " + (2016 - 39));
+			    document.write("Joaquim nasceu em " + (2016 - 20));
+			    document.write("Barney nasceu em " + (2016 - 40));
+			</script>
+	Opção C - Correta
+			<meta charset="UTF-8">
+
+			<script>
+			    document.write("Flávio nasceu em " + (2016 - 39) + "<br>");
+			    document.write("Joaquim nasceu em " + (2016 - 20) + "<br>");
+			    document.write("Barney nasceu em " + (2016 - 40));
+			</script>
+
+Aula 15 - Conclusão
+	Chegou a hora de repetir os passos feitos nos vídeos. A ideia é que você tenha, ao final desta aula, todo o código que foi escrito até agora. Você passou por uma bateria de exercícios para testá-lo, se fizer o que foi apresentado no vídeo fixará ainda mais o que acabou de aprender.
