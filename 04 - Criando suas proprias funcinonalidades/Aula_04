@@ -1,0 +1,213 @@
+Aula 01 - Melhorando a manutenção do código
+	- Quebra de linhas, de diversas maneiras diferentes
+	- document.write("<br><br><br>");    document.write("<br>");
+	- criar variavel para pular linha
+
+Aula 2 - Funções
+	- toda vez tenho que escrever a variavel, repetir varias vezes diversos comandos.
+	- document.write, tu passa para ele, ele escreve no html
+	- alert - exibir um alerta na tela
+	- criarmos a nossa própria função.
+	- em qualquer linguagem existe uma maneira de criar sua própria funcionalidade.
+	- escrita clara e concisa. 
+	- construção:
+		 function pulaLinha(){
+        document.write("<br>");    
+    	}
+    - função sempre verbo, ãção
+    - identar
+    - função trona legivel a intenção do que queremos fazer.
+    - função contjunto de instruções.	
+    - cuidado ao elaborar a função
+    - função é um atalho para o que eu quero executar
+    - javaScript ve o pula linha ele 
+
+Aula 03 - Questionamento sobre funções
+	Leia as seguintes afirmativas sobre funções:
+
+		A) Precisam ser declaradas usando a palavra especial function.
+
+		B) O uso de () da declaração de uma função é opcional.
+
+		C) Toda função possui um bloco, que é caracterizado pelo uso de { e }.
+
+		D) Nenhuma, uma ou mais instruções podem ficar dentro do bloco de uma função.
+
+		Somente a B é um erro.
+
+Aula 04 - Funções que não Funcionam
+	- Erro de sintaxe nas funções abaixo
+	<meta charset="UTF-8">
+		<script>
+
+		    function somaDoisNumeros() {
+
+		        document.write(10 + 20);
+		    }
+
+		    function multiplicaDoisNumeros {
+
+		        document.write(10 * 20);
+		    }
+
+		    function divideDoisNumeros () 
+		        document.write(10/20);
+
+		</script>
+
+	As funções multiplicaDoisNumeros e divideDoisNumeros estão com erro
+
+Aula 05 - Funções com parametros
+	- criar função mostra, para ficar mais vizivel
+	- // comentario
+	- parametros passados a função
+	- function mostra(mostrar){  	} - esta função pega um valor de fora e aplica para uma determinada função 
+	- uma função pode chamar outra função
+		-     function pulaLinha(){
+		        document.write("<br>");
+		        document.write("<br>");        
+		    }
+
+		    function mostra(mostrar){
+		        document.write(mostrar);    
+		     	pulaLinha();
+		    }
+	- Com isto podemos contruir programas mais complexos.
+
+Aula 06 - Resumo
+	- Conseguimos criar nossas Funcionalidades
+	- Toda função começa com function abre e fecha parenteses abre e fecha um bloco.
+	- Passar parametro para a função
+	- Uma função pode chamar outra função
+	- Combinação de pequenas funções
+
+Aula 07 - A pegadinha que deu errado.
+	- Rafela queria brincar com sua amiga fazendo ela clicar muitas vezes no programa.
+		<meta charset="UTF-8">
+			<script>
+			    function fazPegadinha() {
+			        alert("Olá");
+			        alert("amiga!");
+			        alert("Tá");
+			        alert("bastante");
+			        alert("entediada?");
+			        alert("Em ficar");
+			        alert("Clicando em");
+			        alert("Ok");
+			        alert("né?");
+			    }
+			</script>
+	- o programa não funcionou pq faltou a chamada da função fazPegadinha(); nos pontos abaixo do java script. 
+
+Aula 08 - Vantagens de função
+	- Gilberto queria usar funções para quebrar linha e gerou o seguinte código
+		- function pulaLinha() {
+        	document.write("<br>");
+    		}
+    	Ele queria pluar duas linhas e toda a vez precisava colocar a função duas vezes. 
+    - Para melhorar, gilberto poderia ter mudado a função para não precisar chamar ela duas vezes
+			function pulaLinha() {
+        	document.write("<br><br>");
+    		}
+
+Aula 09 - Alerta Diferente
+	- <meta charset="UTF-8">
+		<script>
+		    var idade1 = 10;
+		    var idade2 = 20;
+		    var idade3 = 30;
+		    var totalIdades = idade1 + idade2 + idade3;
+		    var mediaIdades = totalIdades/3;
+		    alert("***Total de idades é " + totalIdades + "***");
+		    alert("***A média das idades é " +  mediaIdades + "***");
+		</script>
+	- Como melhorar, e chamar uma função para colocar alertas.
+	- 	<meta charset="UTF-8">
+			<script>
+			    function exibeAlerta(mensagem) {
+			        alert("***" + mensagem + "***");
+			    }
+
+			    var idade1 = 10;
+			    var idade2 = 20;
+			    var idade3 = 30;
+			    var totalIdades = idade1 + idade2 + idade3;
+			    var mediaIdades = totalIdades/3;
+
+			    exibeAlerta("Total de idades é " + totalIdades);
+			    exibeAlerta("A média das idades é " +  mediaIdades);
+			</script>
+
+Aula 10 - Não mostra como fez, eu recrio do zero
+	- 	**************************************************
+		BEM-VINDO AO MEU PROGRAMA
+		**************************************************
+		ELE REALMENTE FUNCIONA
+		**************************************************
+		EU USEI FUNÇÃO PARA FAZER ISSO
+	- Qual o código que representa o programa executado.
+	- <meta charset="UTF-8">
+		<script>
+
+		    function pulaLinha() {
+
+		        document.write("<br>");
+		    }
+
+		    function mostra(frase) {
+
+		        document.write("**************************************************");
+		        pulaLinha();
+		        document.write(frase);
+		        pulaLinha();
+		    }
+
+		    mostra("BEM-VINDO AO MEU PROGRAMA");
+		    mostra("ELE REALMENTE FUNCIONA");
+		    mostra("EU USEI FUNÇÃO PARA FAZER ISSO");
+
+		</script>
+
+Aula 11 -  (Reflexão) Pessoas que não programam conseguem entender o que um código faz?
+	-	A maneira de escrever o programa pode fazer até mesmo quem nunca escreveu um programa entender o que está em tela.
+	- Exemplo
+		-	<meta charset="UTF-8">
+				<script>
+				    function pulaLinha() {
+				        document.write("<br>");
+				    }
+
+				    function mostra(frase) {
+				        document.write(frase);
+				        pulaLinha();
+				    }
+
+				    mostra("<h1>Bem-vindos</h1>");
+				    mostra("<p>Este é um simples programa</p>");
+
+				</script>
+
+	- Programa moificado
+		<meta charset="UTF-8">
+			<script>
+
+				    function pulaLinha() {
+				        document.write("<br>");
+				    }
+
+				    function exibeTitulo(titulo) {
+				        document.write("<h1>" + titulo + "</h1>");
+				        pulaLinha();
+				    }
+
+				    function exibeParagrafo(paragrafo) {
+				        document.write("<p>" + paragrafo + "</p>");
+				        pulaLinha();
+				    }
+
+				    // pede para alguém ler daqui em diante e veja se ele entende o que esta sendo feito
+				    exibeTitulo("Bem-vindos");
+				    exibeParagrafo("Este é um simples programa");
+			</script>
+
+Aula 12 - 
