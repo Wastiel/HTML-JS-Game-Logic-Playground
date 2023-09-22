@@ -1,0 +1,279 @@
+Aula 01 - Calculando IMC
+	- peso/(altura * altura)
+	- Funcao com parametros de altura e peso
+	- calculaImc(peso, altura);
+	- Fluxo do IMC e dois parametros.
+
+Aula 02 - Cálculo do IMC, fórmula
+	- Peso dividido pela altura ao quadrado. - IMC = peso / (altura * altura)
+
+Aula 03 - Cálculo do IMC, aplicação
+	- Qual das opções abaixo possui o cálculo do IMC aplicado corretamente?
+	-	var peso = 75;
+		var altura = 1.71;
+		var imc = peso / ( altura * altura );
+
+Aula 04 - Função que recebe mais de um parâmetro
+	- Função soma dois numeros
+	- <meta charset="UTF-8">
+
+		<script>
+
+		    function pulaLinha() {
+		        document.write("<br>");
+		    }
+
+		    function mostra(frase) {
+		        document.write(frase);
+		        pulaLinha();
+		    }
+
+		    function somaDoisNumeros(numero1, numero2) {
+		        mostra("A soma dos dois números é : " + (numero1 + numero2) );
+		    }
+
+		    somaDoisNumeros(10, 40);
+		</script>
+
+Aula 05 - Retorno de funções
+	- desafio e somar IMC de duas pessoas
+	- NaN - Not a Number.
+	- Vamos retornar um valor na função com a opção return no final da function. 
+	- O que sai no return da função vai ser o que a gente mandar, não tem relação com o que está entrando na função, a nao ser que forçemos isto. 
+	- 
+
+Aula 06 - Véspera de Carnaval
+	- O chefe pediu uma função que receba 3 parametros "A", 20 e 30 e retornar o código GH1022.
+	- Lionel trapaceou e gerou o seguinte código
+		----------------------------------------------
+		function geraCodigo(letra, numero1, numero2) {
+
+ 		   return "GH1022";
+		}
+		----------------------------------------------
+
+Aula 7 - Retornando um valor especifico
+	- Tenho a seguinte Função 
+		function funcaoQualquer() {
+
+			    var n1 = 10;
+			    var n2 = 20;
+			    var n3 = 30;
+			} 
+	- Como ajustar para que traga um valor n2
+
+	function funcaoQualquer() {
+
+		    var n1 = 10;
+		    var n2 = 20;
+		    var n3 = 30;
+
+		    return n2;
+		}
+
+Aula 8 - Olha O cálculo do IMC novamente
+	- <meta charset="UTF-8">
+			<script>
+			    function pulaLinha() {
+			        document.write("<br>");
+			    }
+
+			    function mostra(frase) {
+			        document.write(frase);
+			        pulaLinha();
+			    }
+
+			    function calculaImc(altura, peso) {
+
+			        var imc = peso / (altura * altura);
+			    }
+
+			    var imcCalculado = calculaImc(1.77, 75);
+			    mostra("O meu IMC é : " + imcCalculado);
+			</script>
+	
+	- como deveria ser a função
+
+	<meta charset="UTF-8">
+		<script>
+		    function pulaLinha() {
+		        document.write("<br>");
+		    }
+
+		    function mostra(frase) {
+		        document.write(frase);
+		        pulaLinha();
+		    }
+
+		    function calculaImc(altura, peso) {
+
+		        var imc = peso / (altura * altura);
+		        return imc;
+		    }
+
+		    var imcCalculado = calculaImc(1.77, 75);
+		    mostra("O meu IMC é : " + imcCalculado);
+		</script>
+
+Aula 09 - Entendendo a fundo retorno das funções.
+	- Retornar direto o calculo --return imc = peso / (altura * altura);
+	- Usou o exemplo do moeddor de carne, onde a gente coloca a carne e ela sai transformada. - Dai com isto usamos o exemplo do IMC;
+	- Conseguimos fazer operações diretas     totalImc = calculaImc(73, 1.71) + calculaImc(68, 1.72);
+	- Substituimos variaveis auxiliares. 
+
+Aula 10 - Valido ou não é valido
+	- Kellen criou a seguinte função
+		- <meta charset="UTF-8">
+
+			<script>
+			    function pulaLinha() {
+			        document.write("<br>");
+			    }
+
+			    function mostra(frase) {
+			        document.write(frase);
+			    }
+
+			    function calculaImc(altura, peso) {
+
+			        return peso / ( altura * altura );
+			    }
+			</script>
+
+	- <meta charset="UTF-8">
+
+			<script>
+			  function pulaLinha() {
+			    document.write("<br>");
+			  }
+
+			  function mostra(frase) {
+			    document.write(frase);
+			  }
+
+			  function calculaImc(altura, peso) {
+			    return peso / (altura * altura);
+			  }
+			  mostra("O meu IMC é " + calculaImc(1.63, 48));
+			</script>
+
+Aula 11 - Interagindo com o usuário. 
+	- Programa que solicite ao usuario altura e peso. 
+	- Pedindo variavel para o usu[ario
+		var peso = prompt("Digite o seu peso");
+    	var altura = prompt("Digite a sua altura");
+    - Esta solicitção ocorre via solicitação da tela. 
+    - Um exemplo legal que foi feito nesta aula, foi solicitar o nome do usuário para depois interagir mais pessoalmente com ele
+    	var nome = prompt("Informe seu Nome: ")
+    	var peso = prompt(nome + ", digite o seu peso");
+    	var altura = prompt(nome +  ", digite a sua altura");
+
+Aula 12 - A função prompt
+	- Temos as seguintes afirmativas sobre a função prompt.
+
+		A) Ela é uma função que recebe parâmetro e não possui retorno.
+
+		B) Ela é uma função que não recebe parâmetro e possui retorno.
+
+		C) Ela é uma função que nem recebe parâmetro e nem possui retorno.
+
+		D) Ela é uma função que recebe parâmetro e possui retorno.
+
+		Qual das afirmações acima é verdadeira?
+		D) Ela é uma função que recebe parâmetro e possui retorno.
+
+Aula 13 - Lendo do teclado
+	- Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, fazemos uso da função prompt.
+
+	- <meta charset="UTF-8">
+
+			<script>
+			    function pulaLinha() {
+
+			        document.write("<br>");
+			    }
+
+			    function mostra(frase) {
+			        document.write(frase);
+			        pulaLinha();
+			    }
+
+			    var numero1 = prompt("Digite o primeiro número");
+			    var numero2 = prompt("Digite o segundo número");
+
+			    mostra("O valor de " + numero1 + " vezes " + numero2 + " é: " + (numero1 * numero2));
+
+			</script>	
+Aula 14 - Qual é o resultado novamente?
+	- Resultado do calculo a seguir:
+	- <meta charset="UTF-8">
+
+			<script>
+			    function pulaLinha() {
+
+			        document.write("<br>");
+			    }
+
+			    function mostra(frase) {
+			        document.write(frase);
+			        pulaLinha();
+			    }
+
+			    function a(numero1, numero2) {
+			        return numero1 + numero2;
+			    }
+
+			    function b(numero1, numero2) {
+			        return numero1 / numero2;
+			    }
+
+			    var resultado = a(10,20) + b(30,2);
+
+			    mostra(resultado);
+			</script>
+
+Aula 15 - Agora eu quero ver se tu entendeu
+	- <meta charset="UTF-8">
+
+			<script>
+			    function pulaLinha() {
+
+			        document.write("<br>");
+			    }
+
+			    function mostra(frase) {
+			        document.write(frase);
+			        pulaLinha();
+			    }
+
+			    function a(texto) {
+
+			        return "(" + texto + ")";
+			    }
+
+			    function b(texto) {
+
+			        return "@" + texto + "@";
+			    }
+
+			    function c(nome, sobrenome) {
+
+			        return b(nome + " " + a(sobrenome));
+
+			    }
+
+			    var resultado = c("Flávio", "Almeida");
+
+			    mostra(resultado);
+
+			</script>
+
+		Qual seria a resposta correta:
+
+			@(Flávio Almeida)@
+
+			@Flávio (Almeida)@
+
+			(Flávio @Almeida@)
+
+Aula 16 - Refazer os pasos.

@@ -1,0 +1,164 @@
+<meta charset="UTF-8">
+
+<h1>Módulo 05 - calcular Indice IMC </h1>
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function mostra(mostrar){
+        document.write(mostrar);    
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura){
+        var imc = peso / (altura * altura);
+        mostra (" O imc calculado é: " + imc);
+
+    }
+
+    var pesoFlavio = 73
+    var alturaFlavio = 1.71;
+    calculaImc(pesoFlavio, alturaFlavio);
+    
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+    calculaImc(pesoAmigo, alturaAmigo);
+
+    calculaImc(73, 1,71);
+    calculaImc(68, 1,72);
+
+    
+</script>
+
+<h1>Módulo 06 - Retorno de funções </h1>
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function mostra(mostrar){
+        document.write(mostrar);    
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura){
+        
+        return imc = peso / (altura * altura);
+        
+          var imc = peso / (altura * altura);
+        
+        return imc;
+
+        
+    }
+
+    
+    varimcFlavio = calculaImc(73, 1.71);
+    varimcAmigo = calculaImc(68, 1.72);
+
+    mostra (varimcFlavio);
+    mostra (varimcAmigo);
+
+    
+</script>
+
+<h1>Módulo 06 - Entendendo a fundo retorno das funções </h1>
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function mostra(mostrar){
+        document.write(mostrar);    
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura){
+        
+        return imc = peso / (altura * altura);
+
+    }
+
+    
+    varimcFlavio = calculaImc(73, 1.71);
+    varimcAmigo = calculaImc(68, 1.72);
+
+    totalImc = calculaImc(73, 1.71) + calculaImc(68, 1.72);
+
+    mostra (varimcFlavio);
+    mostra (varimcAmigo);
+
+    document.write("A soma dos IMC's é: " + totalImc);        
+    
+</script>
+
+<h1>Módulo 06 - interagir com o usuário </h1>
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function mostra(mostrar){
+        document.write(mostrar);    
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura){
+        
+        return peso / (altura * altura);      
+
+    }    
+
+    var nome = prompt("Informe seu Nome: ")
+    var peso = prompt(nome + ", digite o seu peso");
+    var altura = prompt(nome +  ", digite a sua altura");
+    
+    
+    totalImc = peso / (altura * altura);
+
+    document.write(nome + ", a soma dos IMC's é: " + totalImc);        
+    
+</script>
+
+<script>
+                function pulaLinha() {
+
+                    document.write("<br>");
+                }
+
+                function mostra(frase) {
+                    document.write(frase);
+                    pulaLinha();
+                }
+
+                function a(texto) {
+
+                    return "(" + texto + ")";
+                }
+
+                function b(texto) {
+
+                    return "@" + texto + "@";
+                }
+
+                function c(nome, sobrenome) {
+
+                    return b(nome + " " + a(sobrenome));
+
+                }
+
+                var resultado = c("Flávio", "Almeida");
+
+                mostra(resultado);
+
+            </script>

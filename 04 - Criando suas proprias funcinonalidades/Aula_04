@@ -209,5 +209,48 @@ Aula 11 -  (Reflexão) Pessoas que não programam conseguem entender o que um c�
 				    exibeTitulo("Bem-vindos");
 				    exibeParagrafo("Este é um simples programa");
 			</script>
+	- Funções são mais que um conjunto de intruções, são um facilitador de leitura e de coomprensão
 
-Aula 12 - 
+Aula 12 - A idade do meu irmao
+	- Carlos foi desafiado por sua irmã Ana a desenvolver um código que exibisse a mensagem "Nossa diferença de idade é", e realizasse a concatenação do resultado da subtração da sua idade com a do seu irmão (ou de um amigo). O resultado pode ser negativo, sem dúvida. Para desenvolver esse código, não se pode esquecer de usar as funções pulaLinha e mostra e inclusive a tag <meta> para manter as boas práticas de programação.
+	- <meta charset="UTF-8">
+			<script>
+			  function pulaLinha() {
+			    document.write("<br>");
+			  }
+
+			  function mostra(frase) {
+			    document.write(frase);
+			  }
+			  var minhaIdade = 18;
+			  var idadeIrmao = 15;
+			  mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao));
+			  pulaLinha();
+			</script>
+
+Aula 13 - O problema das Geraões
+	- Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?
+
+	Vamos criar um programa para resolver a tarefa!
+
+	Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.
+
+	- Programa correto
+	<meta charset="UTF-8">
+
+		<script>
+		  function pulaLinha() {
+		    document.write("<br>");
+		  }
+
+		  function mostra(frase) {
+		    document.write(frase);
+		    pulaLinha();
+		  }
+		  var idadeMediaQuandoTemFilhos = 28;
+		  var anoAtual = 2016;
+		  var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+		  mostra(quantidadeDeGeracoes);
+		</script>
+
+Aula 14 - Revisão. 
