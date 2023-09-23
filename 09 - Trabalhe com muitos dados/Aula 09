@@ -1,0 +1,67 @@
+Aula 01 - Armazenando Muitos Dados
+	- Pego o botao do html e associo a função do java script a este mundo html.
+	- Segredos diferentes, tipo 3, eu teria que repetir o codigo em 3 vezes, do adivinha. 
+	- Novo tipo de dado array
+	- var = segredos[];
+	- Boa pratica declarar no plurarl var = segredos[];
+	- Clicar em verifica, ver se o que foi digitado esta dentro do segredo. 
+	- cuidado, o array começa em 0 e termina em 9, no caso de um com 10 posições. 
+	- Percorer o fluxo com repetição, focado no ponteiro de movimenação.
+	- dentro do verifica. 
+	- declarar posição. Condição menor que 4 
+	- acertei paro com break. 
+	- depois de testar todas as posições, vou dizer que erro
+	- Se eu adicionar algo no meu vetor? que tinha 4 posicoes
+	- segredos.length, para percorer o vetor. 
+	- Ajustamos o for com uma variavel de verificação para sabermos se acertamos ou eramos para nao dar muitas mensagens para o usuario. 
+
+Aula 02 - Declarando um array
+	- Declaração correta de um array:
+		var coisas = ["Gisele", 12, true];		
+
+Aula 03 - Escolhendo o prato correto
+	- Array de pizzas: pizzas = ["Portuguesa", "Mussarela", "Atum", "Margherita" ];
+	Qual o numero do pedido de pizza de atum?
+		pizzas[2]
+	Isto pq o array começa em 0
+
+Aula 04 - O tamanho de um array
+	- Como podemos saber o tamanho de um array?
+		codigos.length
+
+Aula 05 -Meu código nunca é executado
+	- Este código não está funcionando
+			for(var i = 0; i < parcelas.lenght; i = i + 1) {
+    		document.write(parcelas[i]);
+			}
+	Erro no pacelas.lenght, teria que ser parcelas. lenght.
+
+Aula 06 - Ih, fiquei de fora!
+	- Tenho a lista var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];
+	- Com o for abaixo não exibe o saldinno
+	- O que tem de errado?
+		-	for( var i = 0; i < jogadores.length; i++) {
+
+ 		   alert(jogadores[i]);
+		}
+	O for nao começava da maneira correta, deveria começar no 0.
+
+Aula 07 - Um estranho no ninho
+	- Tenho o seguinte fonte:
+		for( var i = 0; i <= letras.length; i++ ) {
+    		alert(letras[i]);
+			}
+	- Está aparecendo um elemento a mais, o que pode ser?
+	- for( var i = 0; i < letras.length; i++ )
+
+Auila 08 - Maniuplando Array
+	- Declarar itens na declaração do array
+	- segredos.push(5), adiciona itens no array
+	- Nao pode gerar segredos duplicados. 
+	- uma variavel dentro de uma função so existe dentro de uma função
+			function sortiaNumeros(quantidade){
+				var segredos = 
+			}
+	
+			var segredos = sorteiaNumeros();
+	- 

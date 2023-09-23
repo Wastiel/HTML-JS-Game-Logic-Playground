@@ -1,0 +1,269 @@
+Aula 01 - Repetindo Tarefas
+	- Fazer programa ano copa.
+	- Fazer repetir todas os anos que teve copa desde de 1934
+	-  While(anoCopa < 2030) {
+        alert("teve copa + " anoCopa);
+        anoCopa = anoCopa + 4;}
+    - Condição para que não aconteca mais. 
+
+Aula 02 - Aluno Exagerado
+	- Aluno gosta de exagerar no jogo da adivinhação e fica mandando mnensagens.
+	Qual mmaneira correta de fazer 0 mensagens de erro. 
+
+	-	
+        var contador = 1;
+
+        while( contador <= 10 ) {
+
+            mostra("Já era, você errou!");
+            contador = contador + 1;
+        }
+
+Aula 03 - Todos numeros pares de 1 a 100;
+	- Roberta quer escrever de 2 em 2 até mil.
+	-  var contador = 2;
+    while(contador <= 100) {
+        mostra(contador);
+        contador = contador + 2; // incrementa de dois em dois
+    }
+
+Aula 04 -  Todos os números entre 30 a 40, exceto 33 e 37!
+    - Quer imprimir todos os numeros entre 30 e 40 inclusive ambos, porém nao deve imprimir o 37
+
+    -  var contador = 30;
+
+    while(contador <= 40) {
+
+        if( contador == 33 ) {
+        contador = contador + 1;
+        }
+        else if(contador == 37) {    
+            contador = contador + 1;
+        }
+        else {
+        mostra(contador);
+        contador = contador + 1; 
+        }
+      }
+
+Aula 05 - Todos números de 20 a 0
+	-	Mostrar todos numeros de 20 a 0 em ordem decrescente.
+	-  var contador = 20;
+
+		    while( contador >= 0) {
+
+		      mostra(contador);
+		      contador = contador - 1;
+		    }
+
+		    mostra("FIM");
+
+Aula 06 - O ano da copa nunca chega. 
+	-	o programa tem problema que nao exibe o fime
+	- <meta charset="UTF-8">
+
+			<script>
+
+			    function pulaLinha() {
+			        document.write("<br>");
+			    }
+
+			    function mostra(frase) {
+
+			        document.write(frase);
+			        pulaLinha();
+			    }
+
+			    var anoCopa = 1930;
+			    var limite = parseInt(prompt("Qual é o ano limite?"));
+
+			    while(anoCopa <= limite) {
+
+			        mostra(anoCopa + " tem copa!");
+			        anoCopa = anoCopa + 4;
+			    }
+
+			    mostra("Ufa! Esses foram os anos de copa até " + limite);
+			</script>
+
+Aula 07 - Login cadastrado
+	- Validação de login
+					<meta charset="UTF-8">
+						<script>
+
+						    var loginCadastrado = "alura";
+						    var senhaCadastrada = "alura321";
+
+						    var loginInformado = prompt("Informe seu login");
+						    var senhaInformada = prompt("Informe sua senha");
+
+						    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+						        alert("Bem-vindo ao sistema " + loginInformado);
+						    } else {
+
+						        alert("Login inválido. Tente novamente");
+						    }
+						</script>
+
+	- Resposta correta
+			<meta charset="UTF-8">
+
+					<script>
+
+					    var loginCadastrado = "alura";
+					    var senhaCadastrada = "alura321";
+
+					    var maximoTentativas = 3;
+					    var tentativaAtual = 1;
+
+					    while(tentativaAtual <= maximoTentativas) {
+
+					        var loginInformado = prompt("Informe seu login");
+					        var senhaInformada = prompt("Informe sua senha");
+
+					        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+					            alert("Bem-vindo ao sistema, " + loginInformado);
+
+					            tentativaAtual = maximoTentativas; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
+
+					        } else {
+
+					            if (tentativaAtual == 3) {
+					                alert("Número permitido de tentativas ultrapassado!");
+					            } else {
+					                alert("Login inválido. Tente novamente");
+					            }
+					        }
+
+					       // vai para a próxima tentativa
+					        tentativaAtual = tentativaAtual +1  
+					    }
+
+					</script>
+
+Aula 08 - Aceitando apenas numeros
+	-	Daniel tem o seguinte programa
+
+				var idade = parseInt(prompt("Digite sua idade"));
+
+		while( idade == NaN ) {
+		    idade = parseInt(prompt("Digite sua idade"));    
+		}
+
+		alert(idade);
+
+
+		Mas não etá dando certo em função de não estar usando a função isNaN
+
+		Como seria o correto?
+
+					var idade = parseInt(prompt("Digite sua idade"));
+
+			while( isNaN(idade) ) {
+			    idade = parseInt(prompt("Digite sua idade"));    
+			}
+
+			alert(idade);
+
+Aula 09 - Taboada.
+	- Logica de repetição com taboada
+	- outra maneira de aplicar a repetição "for"
+	- três condições - um, doi, tres
+	- for(var multiplicador = 1; multiplicador <=10; multiplicador ++){   
+        mostra(7*multiplicador);           
+    }
+    - Se eu quiser incrementar utilizar a variavel ++;
+    - 
+
+Aula 10 - do while para o for
+	- casal tem que converter o programa que eles receberam de while para for
+	- var contador = 1;
+		while(contador <= 10) {
+		    alert("Contador atual: " + contador);
+		    contador = contador + 1;
+		}
+
+
+
+	for( var contador = 1; contador <= 10; contador = contador + 1 ) {
+    	alert("Contador atual: " + contador);
+		}
+
+Aula 11 - Do for para While.
+	- Convereter de for para While
+
+		for( var i = 0; i < 10; i++ ) {
+	    alert( "O resultado é " + (2 * i) );
+		}
+		
+		- <script>
+		var i = 0;
+		while( i < 10) {
+		    alert( "O resultado é " + (2 * i) );
+		    i++;    
+		}
+		</script>
+
+Aula 12 - acumulando Valores
+	- Media das idades
+	- pedir idade dos familiares conforme quantidade passada no programa
+	- cuidado com variaveis inicializadoras dentro do for, pode dar problema, pq a variavel vai zerar.
+	- acumular valor durante uma repetição é algo comun.
+
+Aula 13 - Organização de eventos Kauren.
+	- Ajudar a kauren na organização de um programa para calcular a media por evento.
+	- Programa na pasta com o nome programa_kauren.html
+
+Aula 14 - Barrados no Bails.
+	- Incremento elegante
+	- contador++;
+
+Aula 15 - Interrompendo uma repetição
+	-	Quando acertar, parar de perguntar para o usuário. Cancelar este looping.
+	- break serve para sair do while.
+
+Aula 16 - O programa que não para de perguntar
+	- Paula quer quebrar um looping caso o usuário digite "SAIR"
+	- 	<meta charset="UTF-8">
+
+			<script>
+
+			    // função pulaLinha e mostra omitidas
+
+			    var resposta = ""; // ainda não tem a resposta
+
+			    while(true) {
+
+			        resposta = prompt("Qual é seu nome?");
+
+			        if( resposta == "SAIR") {
+
+			            break;
+			        }
+			    }
+
+			    mostra("FIM");
+
+			</script>
+Aula 17 - Repetições aninhadas.
+	- programa usando um for dentro do outro, imprimendo asteriscos
+	- 
+
+		for(var linha = 1; linha <=3; linha++){
+        
+        for(var coluna = 1; coluna <=10; coluna++){
+        
+            document.write("*")
+
+        }
+        pulaLinha();
+    }
+
+Aula 18 - parseFloat: Quando usar?
+	- parseFloat() é bom usarmos quando queremos ler numeros decimais da função prompt.
+
+	- Não é necessário usar o parseFloat() quando lemos os dados de peso e altura no cálculo do IMC, pois são como operações de divisão e multiplicação. O JavaScript já realiza a conversão implícita para nós. Contudo, é uma boa prática usar parseInt() ou parseFloat() se queremos ler números inteiros ou decimais fornecido pela função prompt. Nem sempre a conversão implícita vai dar certo, como é o caso do número de vitórias e empates.
+
+	
