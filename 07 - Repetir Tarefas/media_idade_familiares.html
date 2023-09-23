@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>Aula 07 - Media idades</h1>
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function mostra(mostrar){
+
+        document.write(mostrar);    
+        pulaLinha();
+    }
+
+    var totalFamiliares = parseInt(prompt("Quantidade de familiares? "));
+    //var idade = parseInt(prompt("Quantidade de familiares? "));
+    var totalIdades = 0;
+
+    var numero = 1;
+    while(numero <= totalFamiliares){
+        var idade = parseInt(prompt("Quantidade de familiares? "));
+        totalIdades = totalIdades + idade;
+        numero++;
+
+    }
+    var mediaDasIdades = totalIdades/totalFamiliares;
+    mostra("Media de idade dos familiares é : " + mediaDasIdades);
+    mostra("Fim");
+
+</script>
+

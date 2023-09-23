@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<h1>Módulo 06 - Jogo adivinha </h1>
+<h1>Módulo 07 - chances</h1>
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function sorteia(n){
+       return Math.round(Math.random() * n);    
+    }
+
+    function mostra(mostrar){
+        document.write(mostrar);    
+        pulaLinha();
+    }
+
+
+    
+    var numerosorteado = sorteia(10);
+    console.log(numerosorteado);
+    
+    var tentativas = 1;
+    while(tentativas <=3){
+
+        var chute = parseInt(prompt("Digite seu chute! "));
+
+        if (chute == numerosorteado){
+            mostra("você acertou! ");
+            break;
+        } else {
+           mostra("você Errou! , seu numero era menor " );
+        }
+        tentativas++;
+
+    }
+
+</script>

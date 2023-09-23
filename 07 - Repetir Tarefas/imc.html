@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<h1>Módulo 05 - calcular Indice IMC </h1>
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function mostra(mostrar){
+        document.write(mostrar);    
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura){
+        
+        return peso / (altura * altura);      
+
+    }    
+
+    var nome = prompt("Informe seu Nome: ")
+    var peso = prompt(nome + ", digite o seu peso");
+    var altura = prompt(nome +  ", digite a sua altura");
+    
+    
+    totalImc = peso / (altura * altura);
+
+    mostra(nome + ", a soma dos IMC's é: " + totalImc); 
+
+    if(totalImc > 35){
+        mostra("Você está a cima do recomendado ");    
+    }
+    if(totalImc < 18.5){
+        mostra("Você está abaixo do recomendado ");    
+    }    
+    
+    if (totalImc >= 18.5){
+        if(totalImc <= 35){
+         mostra("Seu imc está excelente");
+        }
+    }
+
+     if (totalImc >= 18.5 && totalImc <= 35){    
+         mostra("Seu imc está excelente");
+    }
+    
+           
+    
+</script>
