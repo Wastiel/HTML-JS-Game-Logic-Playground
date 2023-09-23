@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>Aula 07 - -Ano Copa</h1>
+<script>
+    
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");        
+    }
+
+    function mostra(mostrar){
+
+        document.write(mostrar);    
+        pulaLinha();
+    }
+    
+
+    var limite = parseInt(prompt("Entre com a data limite: " ));
+    var anoCopa = 1930;
+    
+
+    mostra("Teve copa em " + anoCopa);
+
+     while(anoCopa < limite){
+        mostra("teve copa  " + anoCopa);
+        anoCopa = anoCopa + 4;
+    }  
+
+    mostra("Fim");
+    
+</script>
+
